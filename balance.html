@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>check balance</title>
+<style>
+.btn
+{
+padding: 10px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#8334eb;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px white;
+}
+.btn:hover {background-color:#0cb7f5}
+</style>
+</head>
+<body bgcolor="hotpink">
+<font
+size="5">
+<script type="text/javascript">
+function validate()
+{
+let x=document.forms["form"]["Enter PIN"].value;
+if(x=="")
+{
+window.alert("Please Enter the PIN");
+return false;
+}
+}
+</script>
+<center><h2>WALLET APP</h2></center><br>
+<center><h3>CHECK BALANCE</h3></center>
+<center><img src="digital-wallet-icon-coins-symbolize-bitcoin-other-cryptocurrency-transactions-bitcoin-wallet-icon-cryptocurrency-107143767.jpg"></center><br>
+<center><form name="form">
+Enter PIN:
+<input type="text" name="Enter PIN"><br<br><br><br>
+<input type="button" class="btn" name="Submit" value="Submit" onclick="return validate()">&nbsp&nbsp&nbsp
+<input type="button" class="btn" name="Cancel" value="Cancel">
+</form></center>
+</body>
+</html>

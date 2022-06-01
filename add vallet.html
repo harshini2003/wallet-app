@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Add wallet</title>
+<style>
+.btn
+{
+padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:blue;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px white;
+}
+.btn:hover {background-color:#e2eb34}
+</style>
+</head>
+<body bgcolor="#34e5eb">
+<font 
+size="5">
+<script type="text/javascript">
+function validate()
+{
+let x=document.forms["form"]["Enter PIN"].value;
+let y=document.forms["form"]["Amount"].value;
+if(x==""||y=="")
+{
+window.alert("Please Enter the PIN and Amount");
+return false;
+}
+}
+</script>
+<center><h1>WALLET APP</h1></center><br><br>
+<center><img src="300.jpg"></center><br>
+<center><form name="form">
+Enter PIN:
+<input type="text" name="Enter PIN" ><br<br><br><br><br>
+Amount:
+<input type="text" name="Amount" ><br><br>
+<input type="button"  class="btn" name="Submit" value="Submit" onclick="return validate()">&nbsp&nbsp&nbsp
+<input type="button"  class="btn" name="Cancel" value="Cancel">
+</form></center>
+</body>
+</html>

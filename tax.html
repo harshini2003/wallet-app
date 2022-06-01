@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>tax bill</title>
+<style>
+.btn
+{
+padding: 10px 15px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#f207ea;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px white;
+}
+.btn:hover {background-color:#d707f2}
+</style>
+</head>
+<body bgcolor="#2c97d1">
+<font
+size="5">
+<script type="text/javascript">
+function validate()
+{
+let x=document.forms["form"]["Service Number"].value;
+let y=document.forms["form"]["Amount"].value;
+
+if(x==""||y=="")
+{
+alert("Please fill the Service Number and Amount");
+return false;
+}
+}
+</script>
+<center><h1>WALLET APP</h1></center><br><br>
+<center><img src="No-plan-impose-Property-Tax-Union-Territory-of-JK-LG-Manoj-Sinha-opposition-Taxscan.jpg"></center><br><br>
+<center><form name="form">
+Tax
+<select id="bill" name="bill">
+<option value="Water Tax">Water Tax</option>
+<option value="Corporation Tax ">Corporation Tax</option>
+</select><br><br>
+Service Number
+<input type="text" name="Service Number"><br><br>
+Amount
+<input type="text" name="Amount"><br><br><br>
+<input type="button" class="btn" name="Pay Options" value="Pay Options" onclick="return validate()">&nbsp&nbsp&nbsp
+<input type="button" class="btn" name="Cancel" value="Cancel">
+</form></center>
+</body>
+</html>

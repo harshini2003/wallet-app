@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>login</title>
+<style>
+#form
+{
+width:300px;
+height:250px;
+border:5px solid;
+border-radius:10px;
+background-color:#66ccff;
+border-color:red;
+}
+.div
+{
+padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:hotpink;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #b103fc;
+}
+.div:hover {background-color:#1f85cf}
+</style>
+</head>
+<body bgcolor="#ffff66"><br><br>
+<font 
+size="5">
+<script type="text/javascript">
+function validate() {
+  let x = document.forms["form"]["e-mail"].value;
+let y = document.forms["form"]["password"].value;
+  if (x == ""||y=="") {
+    alert("E-mail id and password must be filled out");
+    return false;
+  }
+}
+</script>
+<center><h1>WALLET APP</h1></center>
+<center><img src="wallet-with-money-icon-10.png"></center><br>
+<center><form id="form">
+<label>E-mail</label>
+<input type="text" name="e-mail"><br><br>
+<label>password</label>
+<input type="password" name="password"><br><br>
+<a href="password.html">Forgot password?</a>&nbsp&nbsp&nbsp
+<a href="signup.html">signup</a><br><br>
+<form name="form">
+<button type="Submit" class="div" formaction="home.html" onclick="return validate()">Submit</button></form>
+</form></center>
+</body>
+</html>

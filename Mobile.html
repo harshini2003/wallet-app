@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Mobile bill</title>
+<style>
+.btn
+{
+padding: 10px 15px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#08702c;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px white;
+}
+.btn:hover {background-color:#fcfc26}
+</style>
+</head>
+<body bgcolor="#63fc26">
+<font
+size="5">
+<script type="text/javascript">
+function validate()
+{
+let x=document.forms["form"]["Mobile Number"].value;
+let y=document.forms["form"]["Amount"].value;
+
+if(x==""||y=="")
+{
+alert("Please fill the Mobile Number and Amount");
+return false;
+}
+}
+</script>
+<center><h1>WALLET APP</h1></center><br><br>
+<center><img src="mobile-prepaid-recharge-services-250x250.png"></center><br><br>
+<center><form name="form">
+Operator
+<select id="bill" name="bill">
+<option value="Airtel">Airtel</option>
+<option value="Jio">Jio</option>
+<option value="Idea">Idea</option>
+<option value="BSNL">BSNL</option>
+<option value="Vodaphone">Vodaphone</option>
+</select><br><br>
+Mobile Number
+<input type="text" name="Mobile Number"><br><br>
+Amount
+<input type="text" name="Amount"><br><br>
+<input type="button" class="btn" name="Pay Options" value="Pay Options" onclick="return validate()">&nbsp&nbsp&nbsp
+<input type="button" class="btn" name="Cancel" value="Cancel">
+</form></center>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>utility bill</title>
+<style>
+#btn
+{
+padding: 5px 15px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#7807e8;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px white;
+}
+#btn:hover{background-color:#5c09eb;}
+</style>
+</head>
+<body bgcolor="#f511e9">
+<font
+size="5">
+<script type="text/javascript">
+function validate()
+{
+let x=document.forms["form"]["Service Number"].value;
+let y=document.forms["form"]["Amount"].value;
+
+if(x==""||y=="")
+{
+alert("Please fill the Service Number and Amount");
+return false;
+}
+}
+</script>
+<center><h1>WALLET APP</h1></center><br><br>
+<center><img src="images (2).jpg"></center><br><br>
+<center><form name="form">
+Bill Type
+<select id="bill" name="bill">
+<option value="Telephone Bill">Telephone Bill</option>
+<option value="Electricity Bill">Electricity Bill</option>
+</select><br><br>
+Service Number
+<input type="text" name="Service Number"><br><br>
+Amount
+<input type="text" name="Amount"><br><br><br>
+<input type="button" id="btn" name="Pay Options" value="Pay Options" onclick="return validate()">&nbsp&nbsp&nbsp
+<input type="button" id="btn" name="Cancel" value="Cancel">
+</form></center>
+</body>
+</html>

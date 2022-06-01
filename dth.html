@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>DTH bill</title>
+<style>
+.btn
+{
+padding: 10px 15px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#e01d2d;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px #ede42f;
+}
+.btn:hover {background-color:#07eb57}
+</style>
+</head>
+<body bgcolor="#ff9900">
+<font
+size="5">
+<script type="text/javascript">
+function validate()
+{
+let x=document.forms["form"]["DTH Number"].value;
+let y=document.forms["form"]["Amount"].value;
+
+if(x==""||y=="")
+{
+alert("Please fill the DTH Number and Amount");
+return false;
+}
+}
+</script>
+<center><h1>WALLET APP</h1></center><br><br>
+<center><img src="m-3.png"></center><br>
+<center><form name="form">
+Operator
+<select id="bill" name="bill">
+<option value="Tata Sky">Tata Sky</option>
+<option value="Sun Direct">Sun Direct</option>
+<option value="Airtel">Airtel</option>
+<option value="Jio">Jio</option>
+</select><br><br>
+DTH Number
+<input type="text" name="DTH Number"><br><br>
+Amount
+<input type="text" name="Amount"><br><br>
+<input type="button" class="btn" name="Pay Options" value="Pay Options" onclick="return validate()">&nbsp&nbsp&nbsp
+<input type="button" class="btn" name="Cancel" value="Cancel">
+</form></center>
+</body>
+</html>
